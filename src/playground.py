@@ -1,11 +1,15 @@
 from API.concepts.player import Player
 
 def playground():
-    player = Player("#VPJY8CVG")
-    members = player.getClan().getMembers()
-    playerlist = []
+    game_api_token = "42xcd9xz" # this can be found in the game settings
+    player = Player("#VPJY8CVG") # tag of player luminawight
+    if player.verify(game_api_token) :
+        print("Player verified " + player.global_info.get("name", "No Name"))
 
-    for member in members:
-        playerlist.append( member.get("name"))
+        members = player.getClan().getMembers()
+        playerlist = []
 
-    print(playerlist)
+        for member in members:
+            playerlist.append( member.get("tag"))
+
+        print(playerlist)
