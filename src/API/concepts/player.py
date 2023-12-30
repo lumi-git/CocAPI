@@ -1,5 +1,5 @@
-import apiGetter
-from concepts.clan import Clan
+import API.apiGetter as apiGetter
+from API.concepts.clan import Clan
 
 class Player:
     def __init__(self, playerTag):

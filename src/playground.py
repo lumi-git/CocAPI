@@ -1,7 +1,4 @@
-from apiGetter import *
-from output import printInFile,cleanJson
-from concepts.player import Player
-
+from API.concepts.player import Player
 
 def playground():
     player = Player("#VPJY8CVG")

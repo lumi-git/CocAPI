@@ -1,4 +1,4 @@
-import apiGetter
+import API.apiGetter as apiGetter
 class Clan : 
     def __init__(self, clan_tag):
         self.clan_tag = clan_tag

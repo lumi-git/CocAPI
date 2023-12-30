@@ -1,5 +1,5 @@
 import requests
-from requestsSettings import *
+from API.requestsSettings import *
 
 def getPlayerInfo(playerTag ):
     response = requests.get(getPlayerApiUrl(playerTag), headers=headers)
