@@ -11,3 +11,6 @@ headers = {
 
 def getPlayerApiUrl(PLAYER_TAG):
     return f"https://api.clashofclans.com/v1/players/%23{PLAYER_TAG.replace('#', '')}"
+
+def getClanApiUrl(CLANTAG):
+    return f"https://api.clashofclans.com/v1/clans/%23{CLANTAG.replace('#', '')}"

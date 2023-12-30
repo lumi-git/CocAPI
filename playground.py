@@ -1,6 +1,14 @@
 from apiGetter import *
+from output import printInFile,cleanJson
+from concepts.player import Player
+
 
 def playground():
-    playerTag = "#VPJY8CVG"
-    player_info = getPlayerInfo(playerTag)
-    print(player_info)
+    player = Player("#VPJY8CVG")
+    members = player.getClan().getMembers()
+    playerlist = []
+
+    for member in members:
+        playerlist.append( member.get("name"))
+
+    print(playerlist)
