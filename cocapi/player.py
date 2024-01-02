@@ -1,6 +1,6 @@
-import API.apiGetter as apiGetter
-import API.apiPost as apiPost
-from API.concepts.clan import Clan
+import cocapi.apiGetter as apiGetter
+import cocapi.apiPost as apiPost
+from cocapi.clan import Clan
 
 class Player:
     def __init__(self, playerTag):

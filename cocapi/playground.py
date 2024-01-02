@@ -1,4 +1,4 @@
-from API.concepts.player import Player
+from cocapi.player import Player
 
 def playground():
     game_api_token = "42xcd9xz" # this can be found in the game settings
