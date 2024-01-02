@@ -3,7 +3,6 @@ from cocapi.requestsSettings import *
 
 def getPlayerInfo(playerTag ):
     response = requests.get(getPlayerApiUrl(playerTag), headers=getAPIHeader())
-    print(response)
     if response.status_code == 200:
 
         player_info = response.json()

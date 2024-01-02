@@ -7,7 +7,7 @@ LONG_DESCRIPTION = 'Clash of Clans API wrapper'
 # Setting up
 setup(
     name="cocapi",
-    version='0.0.2',
+    version='0.0.3',
     author="PyGIne (Ronan.T)",
     author_email="<ronan.tremoureux@gmail.com>",
     description=DESCRIPTION,
