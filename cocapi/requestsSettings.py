@@ -55,3 +55,4 @@ def getClanApiUrl(CLANTAG) -> str:
 def getVerifyPlayerTokenApiUrl(PLAYER_TAG) -> str:
     return f"https://api.clashofclans.com/v1/players/%23{PLAYER_TAG.replace('#', '')}/verifytoken"
 
+
