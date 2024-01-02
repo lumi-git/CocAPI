@@ -1,7 +1,7 @@
 import requests
 from cocapi.requestsSettings import *
 
-def getPlayerInfo(playerTag ):
+def getPlayerInfo(playerTag:str):
     response = requests.get(getPlayerApiUrl(playerTag), headers=getAPIHeader())
     if response.status_code == 200:
 
@@ -11,7 +11,7 @@ def getPlayerInfo(playerTag ):
     else:
         print("Error, status code : ", response.status_code)
 
-def getClanInfo(clanTag):
+def getClanInfo(clanTag:str):
     response = requests.get(getClanApiUrl(clanTag), headers=getAPIHeader())
 
     if response.status_code == 200:
@@ -22,7 +22,7 @@ def getClanInfo(clanTag):
     else:
         print("Error, status code : ", response.status_code)
 
-def getClanMembers(clanTag):
+def getClanMembers(clanTag:str):
     clanInfo = getClanInfo(clanTag)
     clanMembers = clanInfo.get("memberList", [])
     return clanMembers

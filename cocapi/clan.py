@@ -2,7 +2,7 @@ import cocapi.apiGetter as apiGetter
 from cocapi.distantSourceObject import distantSourceObject
 
 class Clan(distantSourceObject) : 
-    def __init__(self, clan_tag,loadInfo=True):
+    def __init__(self, clan_tag:str,loadInfo=True):
         self.clan_tag = clan_tag
         super().__init__(loadInfo)
 

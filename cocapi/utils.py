@@ -1,6 +1,6 @@
 from threading import Thread
 from cocapi.player import Player
-def loadplayersThreaded(playersTagsList) -> list[Player]:
+def loadplayersThreaded(playersTagsList:list[str]) -> list[Player]:
     players = []
     threads = []
 

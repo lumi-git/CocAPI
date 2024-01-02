@@ -3,7 +3,7 @@ import cocapi.apiPost as apiPost
 from cocapi.distantSourceObject import distantSourceObject
 
 class Player(distantSourceObject):
-    def __init__(self, playerTag,loadInfo=True):
+    def __init__(self, playerTag:str,loadInfo=True):
         self.playerTag = playerTag
         super().__init__(loadInfo)
 
