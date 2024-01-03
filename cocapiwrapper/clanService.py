@@ -1,6 +1,6 @@
-from cocapi.player import Player
-from cocapi.clan import Clan
-from cocapi.utils import loadplayersThreaded
+from cocapiwrapper.player import Player
+from cocapiwrapper.clan import Clan
+from cocapiwrapper.utils import loadplayersThreaded
 class clanService:
     """
     This service class provides functionalities related to Clan operations in the Clash of Clans game.

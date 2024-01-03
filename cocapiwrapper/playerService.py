@@ -1,5 +1,5 @@
-from cocapi.player import Player
-from cocapi.clan import Clan
+from cocapiwrapper.player import Player
+from cocapiwrapper.clan import Clan
 class playerService:
     def getClanOfPlayer(self, player:Player, loadPlayersData=False) -> Clan:
         return Clan(player.getClanTag())

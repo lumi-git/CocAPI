@@ -1,6 +1,6 @@
 import requests
-from cocapi.application import application
-from cocapi.requestsSettings import *
+from cocapiwrapper.application import application
+from cocapiwrapper.requestsSettings import *
 
 
 def getPlayerInfo(playerTag:str):

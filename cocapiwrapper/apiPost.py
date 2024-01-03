@@ -1,5 +1,5 @@
 import requests
-from cocapi.requestsSettings import *
+from cocapiwrapper.requestsSettings import *
 
 def verifyPlayerToken(playerTag:str, playerToken:str):
     """

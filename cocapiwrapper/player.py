@@ -1,6 +1,6 @@
-import cocapi.apiGetter as apiGetter
-import cocapi.apiPost as apiPost
-from cocapi.distantSourceObject import distantSourceObject,usesDistantInfos
+import cocapiwrapper.apiGetter as apiGetter
+import cocapiwrapper.apiPost as apiPost
+from cocapiwrapper.distantSourceObject import distantSourceObject,usesDistantInfos
 
 
 class Player(distantSourceObject):

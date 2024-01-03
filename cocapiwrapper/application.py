@@ -1,5 +1,5 @@
 import requests
-from cocapi.requestsSettings import getAPIHeader, verifyTokenValidityApiUrl
+from cocapiwrapper.requestsSettings import getAPIHeader, verifyTokenValidityApiUrl
 
 
 def createSession():
