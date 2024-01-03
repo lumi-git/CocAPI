@@ -12,6 +12,21 @@ def usesToken( func ):
 
 API_TOKEN = None
 
+class tokenLoader:
+    def fromFile(tokenfilepath:str) -> bool:
+        return loadToken(tokenfilepath)
+    
+    def fromString(token:str) -> bool:
+        global API_TOKEN
+        API_TOKEN = token
+        return True
+    
+    def fromEnv():
+        global API_TOKEN
+        API_TOKEN = os.environ.get("COC_API_TOKEN")
+        return True
+    
+
 def loadToken(tokenfilepath:str) -> bool:
     global API_TOKEN
     if os.path.exists(tokenfilepath):
@@ -40,7 +55,6 @@ def ensureToken() :
         exit()
 
 
-
 def getPlayerVerifyBody(playerToken:str) -> dict:
     return  {"token": str(playerToken)}
     
@@ -51,8 +65,8 @@ def getPlayerApiUrl(PLAYER_TAG) -> str:
 def getClanApiUrl(CLANTAG) -> str:
     return f"https://api.clashofclans.com/v1/clans/%23{CLANTAG.replace('#', '')}"
 
-
 def getVerifyPlayerTokenApiUrl(PLAYER_TAG) -> str:
     return f"https://api.clashofclans.com/v1/players/%23{PLAYER_TAG.replace('#', '')}/verifytoken"
 
-
+def verifyTokenValidityApiUrl() -> str :
+    return "https://api.clashofclans.com/v1/clans?name=bruh"
