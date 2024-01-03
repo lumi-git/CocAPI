@@ -8,8 +8,13 @@
 
 name: Upload Python Package
 
-on: push
-
+on: 
+  push:
+    branches:
+      - main #only on branch main
+    paths:
+      - 'setup.py' # only if setup is modified
+      
 permissions:
   contents: read
 
